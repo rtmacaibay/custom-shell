@@ -27,7 +27,7 @@ void change_dir(char ** tokens, int tokens_size);
 
 void change_env(char ** tokens, int tokens_size);
 
-int check_built_in(struct command_line * cmds, int comm_sz, char * line);
+int check_built_in(struct command_line * cmds, int comm_sz, char * line, int add);
 
 void free_env(void);
 

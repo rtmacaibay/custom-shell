@@ -87,9 +87,10 @@ void change_env(char ** tokens, int tokens_size) {
 	}
 }
 
-int check_built_in(struct command_line * cmds, int comm_sz, char * line) {
+int check_built_in(struct command_line * cmds, int comm_sz, char * line, int add) {
 	//add our stuff to the history
-	add_to_history(cmds, comm_sz, line);
+	if (add)
+		add_to_history(cmds, comm_sz, line);
 
 	if (strcmp(cmds[0].tokens[0], "setenv") == 0) {
 		change_env(cmds[0].tokens, cmds[0].tokens_size);

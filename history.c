@@ -141,7 +141,7 @@ void run_history_command(int hist_num, char * line) {
 	int index = counter - (obj_total - hist_num);
 
 	//run
-	if (!check_built_in(hist_list[index].cmds, hist_list[index].comm_sz, line)) {
+	if (!check_built_in(hist_list[index].cmds, hist_list[index].comm_sz, line, 0)) {
 		pid_t pid = fork();
 
 		if (pid == 0) {
