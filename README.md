@@ -16,4 +16,5 @@ set - you can see all your environment variables
 
 
 How to build: make
+
 How to run: ./crash
