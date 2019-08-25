@@ -5,6 +5,7 @@
  *
  * https://groups.google.com/forum/message/raw?msg=comp.lang.c/ff0xFqRPH_Y/Cen0mgciXn8J
  * NOTE: This program was rightfully stolen from the boy, Matthew Malensek.
+ * Author: Matthew Malensek
  */
 
 #include <string.h>
